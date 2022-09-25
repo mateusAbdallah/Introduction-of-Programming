@@ -9,6 +9,7 @@ internal class Program
         DisplayMotto();
         DisplayInstructions();
         GetFullName();
+        GetAddress();
 
         static void DisplayInstructions()
         {
@@ -39,6 +40,15 @@ internal class Program
             WriteLine(fullName);
 
             return fullName;
+        }
+
+        static string GetAddress()
+        {
+            WriteLine("Enter your address:");
+            string address = ReadLine();
+            WriteLine(address);
+
+            return address;
         }
 
 
