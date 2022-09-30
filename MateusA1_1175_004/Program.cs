@@ -8,17 +8,15 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        //instantiating the object
         RentalApp rentalApp = new RentalApp();
 
-        rentalApp.DisplayMotto();
-        rentalApp.DisplayInstructions();
-        rentalApp.GetFullName();
-        rentalApp.GetAddress();
-        rentalApp.GetMinutes();
+        rentalApp.DisplayDetails();
 
-        
         ReadKey();
     }
+
+     
 
 
 

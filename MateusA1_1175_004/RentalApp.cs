@@ -8,8 +8,9 @@ using static System.Console;
 namespace MateusA1_1175_004
 {
     internal class RentalApp
-    {
-        
+    {   
+
+        //pattern message from the application
          public void DisplayMotto()
          {
             WriteLine("\t\tSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS");
@@ -18,7 +19,7 @@ namespace MateusA1_1175_004
             WriteLine("\t\tS\t\t\t\t\tS");
             WriteLine("\t\tSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS\n");
          }
-
+        //pattern message from the application
         public void DisplayInstructions()
         {
             WriteLine("This application computes rent for Kayak and Canoe.\n" +
@@ -26,36 +27,58 @@ namespace MateusA1_1175_004
             "The application calculates the rental price of kayak and canoe and displays that.\n" +
             "Two tests will be performed.\n");
         }
-
+        
+        //getting the user's full name
         public string GetFullName()
         {
-            WriteLine("Enter your first name:");
+            WriteLine("Please enter your first name: ");
             string firstName = ReadLine();
 
-            WriteLine("Enter your last name:");
+            WriteLine("Please enter your last name: ");
             string lastName = ReadLine();
 
-            string fullName = firstName + lastName;
+            string fullName = firstName + " " + lastName;
+            
 
             return fullName;
         }
-
+        //getting the user's address
         public string GetAddress()
         {
-            WriteLine("Enter your address:");
+            WriteLine("Please enter your address:");
             string address = ReadLine();
 
             return address;
         }
 
+
+        //getting the user's minutes
         public int GetMinutes()
         {
-            WriteLine("Enter how many minutes you want:");
+            WriteLine("Please enter how many minutes you want:");
             string minutes = ReadLine();
             int minutesInt = int.Parse(minutes);
 
             return minutesInt;
         }
+        
+
+        //display the infos in the console
+        public void DisplayDetails()
+        {
+            string name = GetFullName();
+            string address = GetAddress();
+            int minutes = GetMinutes();
+            
+
+
+            WriteLine("\nSam's rental App");
+            WriteLine("Customer name: " + name + " ");
+            WriteLine("Customer address: " + address);
+            WriteLine("Minutes would be rented: " + minutes);
+            
+        }
+        
 
 
     }
