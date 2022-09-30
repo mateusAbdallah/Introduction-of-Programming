@@ -11,6 +11,8 @@ internal class Program
         //instantiating the object
         RentalApp rentalApp = new RentalApp();
 
+        rentalApp.DisplayMotto();
+        rentalApp.DisplayInstructions();
         rentalApp.DisplayDetails();
 
         ReadKey();

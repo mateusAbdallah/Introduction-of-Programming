@@ -61,7 +61,7 @@ namespace MateusA1_1175_004
 
             return minutesInt;
         }
-        
+
 
         //display the infos in the console
         public void DisplayDetails()
