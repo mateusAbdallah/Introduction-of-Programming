@@ -21,7 +21,12 @@ internal class Program
         WriteLine("For how many minutes to you to rent: ");
         int minutes = int.Parse(ReadLine());
 
-        
+        RentalApp rental1 = new RentalApp(name, type);
+
+        double total = rental1.CalculateTotal(minutes);
+
+        WriteLine("Mr/Ms " + name + " to rent a {0} for {1} minutes would be {2:c}."
+            , type, minutes, total);
         //instantiating the object
 
         //WriteLine("\t\tSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS");

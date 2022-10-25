@@ -13,9 +13,10 @@ namespace MateusA1_1175_004
         //private int minutes;
         private string type;
 
-        public RentalApp(string n)
+        public RentalApp(string n, string t)
         {
             name = n;
+            type = t;
                         
         }
 
@@ -30,11 +31,11 @@ namespace MateusA1_1175_004
             double rent = 0.0;
             if(type == "Canoe" || type == "canoe")
             {
-                rent = 12.99;
+                rent = 7.99;
             }
             if(type == "kayak" || type == "Kayak")
             {
-                rent = 15.99;
+                rent = 9.99;
             }
             
             return rent * d;
